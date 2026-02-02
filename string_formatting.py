@@ -13,4 +13,38 @@ print(name.upper())
 print(name.lower())
 print(name.capitalize())
 
-#Explore by your own now
+#Replace method
+replaced_name = name.replace("th","ishi")
+print(replaced_name)
+
+
+
+#--Split function
+toSplit = "Parth Sanjeev Ahuja"
+myList = toSplit.split(" ")
+print(myList)
+
+#Ends with / Starts With
+
+file="raw_data.csv"
+if(file.endswith(".csv")):
+    print("csv file")
+
+if(file.startswith("raw")):
+    print("This is a raw file")
+
+#count the occurence
+statement ="Hello my  name is parth and parth is studying python right now"
+print(statement.count("parth"))
+print(statement.count("is"))
+
+#Check the data Type
+demoStr = "Hello"
+demoVar=10
+demoVar2="10"
+
+print(demoStr.isnumeric())
+#print(demoVar.isnumeric()) #-- Works only in the case of string
+print(demoVar2.isnumeric())
+
+#Explore more methods by your own
