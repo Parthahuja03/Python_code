@@ -35,10 +35,25 @@ class empInfo():
     def __init__(self,empName,empDept):
         self.empName = empName
         self.empDept = empDept
+
+    #It is not recommended
+    def changes(self, new_company):
+        self.company_name=new_company
+
+    #Industrial implementation 
+    @classmethod
+    def changesInClass(cls, new_company):
+        cls.company_name=new_company
     
     def info(self):
         print(f"Employee {self.empName} works for {self.empDept}")
+    
+    @staticmethod #--> if it will not be passed then there will be issue in passing the arguments
+    def addition(x,y):
+        print(x+y)
 
 emp2 = empInfo("parth","IT")
 emp2.info()
+
+emp2.addition(1,2)
         
